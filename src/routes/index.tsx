@@ -110,6 +110,12 @@ function Index() {
                 />
               ))}
             </div>
+            <div className="mt-3 flex items-center justify-between text-xs font-mono">
+              <span className="text-muted-foreground">security score</span>
+              <span className="font-semibold" style={{ color: verdict.color }}>
+                {password ? `${score * 20}/100` : "—"}
+              </span>
+            </div>
           </div>
 
           <ul className="mt-6 grid gap-2">
